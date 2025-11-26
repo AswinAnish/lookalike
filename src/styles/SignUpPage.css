@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -7,16 +7,16 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.login-box {
+.signup-box {
   background: white;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
-.login-title {
+.signup-title {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
@@ -24,7 +24,7 @@
   font-weight: 600;
 }
 
-.login-form {
+.signup-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -71,7 +71,7 @@
   border-left: 4px solid #c33;
 }
 
-.login-button {
+.signup-button {
   padding: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -84,32 +84,32 @@
   margin-top: 10px;
 }
 
-.login-button:hover:not(:disabled) {
+.signup-button:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-.login-button:active:not(:disabled) {
+.signup-button:active:not(:disabled) {
   transform: translateY(0);
 }
 
-.login-button:disabled {
+.signup-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
 
-.login-footer {
+.signup-footer {
   margin-top: 20px;
   text-align: center;
   font-size: 13px;
   color: #666;
 }
 
-.login-footer p {
+.signup-footer p {
   margin: 8px 0;
 }
 
-.login-footer .link-btn {
+.signup-footer .link-btn {
   background: none;
   border: none;
   color: #667eea;
@@ -122,7 +122,17 @@
   font-family: inherit;
 }
 
-.login-footer .link-btn:hover {
+.signup-footer .link-btn:hover {
   color: #764ba2;
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .signup-box {
+    padding: 30px 20px;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
 }

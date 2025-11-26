@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/LoginPage.css';
 import { validateUser } from '../db/validation';
 
-function LoginPage({ onLogin }) {
+function LoginPage({ onLogin, onNavigateSignUp, onNavigateForgot }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -78,8 +78,8 @@ function LoginPage({ onLogin }) {
         </form>
 
         <div className="login-footer">
-          <p>Don't have an account? <a href="#signup">Sign up</a></p>
-          <p><a href="#forgot">Forgot password?</a></p>
+          <p>Don't have an account? <button className="link-btn" onClick={onNavigateSignUp}>Sign up</button></p>
+          <p><button className="link-btn" onClick={onNavigateForgot}>Forgot password?</button></p>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/HomePage.css';
 
-function HomePage({ userName, onLogout }) {
+function HomePage({ userName, userAvatar, onLogout }) {
   const [courses] = useState([
     {
       id: 1,
@@ -71,6 +71,8 @@ function HomePage({ userName, onLogout }) {
     }
   ]);
 
+
+
   return (
     <div className="home-container">
       {/* Header/Navbar */}
@@ -84,7 +86,10 @@ function HomePage({ userName, onLogout }) {
             </div>
           </div>
           <div className="navbar-right">
-            <span className="user-greeting">Welcome, {userName}!</span>
+            <div className="user-section">
+              <div className="user-avatar">{userAvatar}</div>
+              <span className="user-greeting">Welcome, {userName}!</span>
+            </div>
             <button onClick={onLogout} className="logout-btn">Logout</button>
           </div>
         </div>
@@ -138,30 +143,6 @@ function HomePage({ userName, onLogout }) {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>Udemy</h4>
-            <p>© 2024 Udemy, Inc.</p>
-          </div>
-          <div className="footer-section">
-            <h4>About</h4>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#careers">Careers</a></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#help">Help & Support</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
