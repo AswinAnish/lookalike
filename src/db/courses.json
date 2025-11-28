@@ -1,24 +1,68 @@
-{
-"courses": [
+[
 {
 "id": 1,
-"title": "Fluent English in 30 Days",
-"thumbnail": "/images/fluent-english.jpg",
-"creator": "Anjali Roy",
-"language": "English",
-"level": "Beginner",
-"hours": 6,
-"price": 799
+"title": "The Complete JavaScript Course 2024",
+"instructor": "Jonas Schmedtmann",
+"rating": 4.8,
+"reviews": 1250,
+"price": "$14.99",
+"originalPrice": "$84.99",
+"image": "📚",
+"students": "2.5M"
 },
 {
 "id": 2,
-"title": "Complete A1 German",
-"thumbnail": "/images/german-a1.jpg",
-"creator": "Daniel Weber",
-"language": "German",
-"level": "A1",
-"hours": 8,
-"price": 899
+"title": "React - The Complete Guide",
+"instructor": "Maximilian Schwarzmüller",
+"rating": 4.7,
+"reviews": 980,
+"price": "$14.99",
+"originalPrice": "$94.99",
+"image": "⚛️",
+"students": "1.8M"
+},
+{
+"id": 3,
+"title": "Web Design for Beginners",
+"instructor": "Brad Traversy",
+"rating": 4.9,
+"reviews": 650,
+"price": "$12.99",
+"originalPrice": "$74.99",
+"image": "🎨",
+"students": "980K"
+},
+{
+"id": 4,
+"title": "Python for Data Science",
+"instructor": "Andrew Ng",
+"rating": 4.8,
+"reviews": 1100,
+"price": "$16.99",
+"originalPrice": "$99.99",
+"image": "🐍",
+"students": "3.2M"
+},
+{
+"id": 5,
+"title": "Advanced CSS Mastery",
+"instructor": "Wes Bos",
+"rating": 4.7,
+"reviews": 520,
+"price": "$11.99",
+"originalPrice": "$79.99",
+"image": "🎯",
+"students": "750K"
+},
+{
+"id": 6,
+"title": "Node.js & Express Complete Guide",
+"instructor": "Stephen Grider",
+"rating": 4.8,
+"reviews": 890,
+"price": "$14.99",
+"originalPrice": "$84.99",
+"image": "🖥️",
+"students": "1.5M"
 }
 ]
-}
