@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const courses = [
 {id: 1,
 thumbnail: "/images/fluent-english.jpg",
@@ -56,3 +57,10 @@ language: "German",
 level: "A1–B1",
 hours: 5}
 ];
+=======
+import data from "./courses.json";
+
+const courses = Array.isArray(data.courses) ? data.courses : [];
+
+export default courses;
+>>>>>>> 4e99a378bb7ed1657b105db911e12f00006e4076
