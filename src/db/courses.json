@@ -1,0 +1,24 @@
+{
+"courses": [
+{
+"id": 1,
+"title": "Fluent English in 30 Days",
+"thumbnail": "/images/fluent-english.jpg",
+"creator": "Anjali Roy",
+"language": "English",
+"level": "Beginner",
+"hours": 6,
+"price": 799
+},
+{
+"id": 2,
+"title": "Complete A1 German",
+"thumbnail": "/images/german-a1.jpg",
+"creator": "Daniel Weber",
+"language": "German",
+"level": "A1",
+"hours": 8,
+"price": 899
+}
+]
+}
