@@ -56,7 +56,6 @@ function HomePage({ userName, userAvatar, onLogout }) {
                 language={course.language}
                 level={course.level}
                 hours={course.hours}
-                // pass extra props if needed
               />
             ))}
           </div>
@@ -64,10 +63,6 @@ function HomePage({ userName, userAvatar, onLogout }) {
       </section>
     </div>
   );
-}
-
-export default HomePage;
-
 }
 
 export default HomePage;
