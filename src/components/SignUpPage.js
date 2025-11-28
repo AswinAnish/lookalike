@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/SignUpPage.css';
-import { userExists } from '../db/validation';
+import { userExists, addLocalUser } from '../db/validation';
 
 function SignUpPage({ onSignUp, onBackToLogin }) {
   const [username, setUsername] = useState('');
@@ -47,6 +47,7 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
 
     // Create new user
     setIsLoading(true);
+
     setTimeout(() => {
       const avatars = ['👤', '👨', '👩', '🧑', '👨‍💼', '👩‍💼', '👨‍🎓', '👩‍🎓'];
       const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];
@@ -59,10 +60,13 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
         avatar: randomAvatar
       };
 
-      // Add to users.json
-      const users = JSON.parse(localStorage.getItem('appUsers') || '[]');
-      users.push(newUser);
-      localStorage.setItem('appUsers', JSON.stringify(users));
+      const res = addLocalUser(newUser);
+
+      if (!res.success) {
+        setError(res.reason === 'exists' ? 'Username already exists' : 'Signup failed');
+        setIsLoading(false);
+        return;
+      }
 
       console.log('Sign up successful:', newUser);
       onSignUp(username);
@@ -71,14 +75,14 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
       setPassword('');
       setConfirmPassword('');
       setIsLoading(false);
-    }, 1000);
+    }, 700);
   };
 
   return (
     <div className="signup-container">
       <div className="signup-box">
         <h1 className="signup-title">Create Account</h1>
-        
+
         <form onSubmit={handleSubmit} className="signup-form">
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -130,8 +134,8 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
 
           {error && <div className="error-message">{error}</div>}
 
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="signup-button"
             disabled={isLoading}
           >
