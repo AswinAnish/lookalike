@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SignUpPage.css';
-import { userExists, addLocalUser } from '../db/validation';
+import { userExists } from '../db/validation';
+import { createUser } from '../db/userStore';
 
 function SignUpPage({ onSignUp, onBackToLogin }) {
   const [username, setUsername] = useState('');
@@ -52,23 +53,20 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
       const avatars = ['👤', '👨', '👩', '🧑', '👨‍💼', '👩‍💼', '👨‍🎓', '👩‍🎓'];
       const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];
 
-      const newUser = {
-        id: Date.now(),
+      const result = createUser({
         username,
         password,
         email,
         avatar: randomAvatar
-      };
+      });
 
-      const res = addLocalUser(newUser);
-
-      if (!res.success) {
-        setError(res.reason === 'exists' ? 'Username already exists' : 'Signup failed');
+      if (!result.success) {
+        setError(result.reason === 'exists' ? 'Username already exists' : 'Signup failed');
         setIsLoading(false);
         return;
       }
 
-      console.log('Sign up successful:', newUser);
+      console.log('Sign up successful:', result.user);
       onSignUp(username);
       setUsername('');
       setEmail('');
@@ -144,7 +142,12 @@ function SignUpPage({ onSignUp, onBackToLogin }) {
         </form>
 
         <div className="signup-footer">
-          <p>Already have an account? <button className="link-btn" onClick={onBackToLogin}>Login</button></p>
+          <p>
+            Already have an account?{' '}
+            <button className="link-btn" onClick={onBackToLogin}>
+              Login
+            </button>
+          </p>
         </div>
       </div>
     </div>
