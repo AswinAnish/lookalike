@@ -1,5 +1,2 @@
-import data from "./courses.json";
-
-const courses = Array.isArray(data.courses) ? data.courses : [];
-
+import courses from "./courses.json";
 export default courses;
