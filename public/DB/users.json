@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "1234",
+      "name": "Admin User",
+      "email": "admin@learnin.com",
+      "role": "Administrator",
+      "joined": "2024-01-01",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "username": "user",
+      "password": "abcd",
+      "name": "Regular User",
+      "email": "user@learnin.com",
+      "role": "Learner",
+      "joined": "2024-06-15",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    }
+  ]
+}

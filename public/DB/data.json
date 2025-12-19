@@ -1,0 +1,141 @@
+{
+  "sections": [
+    {
+      "type": "courses",
+      "title": "Courses",
+      "items": [
+        {
+          "id": 1,
+          "title": "Malayalam Course",
+          "subtitle": "Beginner to Advanced",
+          "price": "₹499",
+          "image": "https://images.unsplash.com/photo-1529070538774-1843cb3265df"
+        },
+        {
+          "id": 2,
+          "title": "Spoken English",
+          "subtitle": "Daily conversation mastery",
+          "price": "₹699",
+          "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
+        },
+        {
+          "id": 3,
+          "title": "Hindi Essentials",
+          "subtitle": "Speak confidently",
+          "price": "₹399",
+          "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0"
+        },
+        {
+          "id": 4,
+          "title": "French Basics",
+          "subtitle": "Start speaking French",
+          "price": "₹599",
+          "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7"
+        },
+        {
+          "id": 5,
+          "title": "German for Beginners",
+          "subtitle": "Learn German from scratch",
+          "price": "₹549",
+          "image": "https://images.unsplash.com/photo-1491841651911-c44c30c34548"
+        }
+      ]
+    },
+    {
+      "type": "videos",
+      "title": "Videos",
+      "items": [
+        {
+          "id": 1,
+          "title": "Malayalam Basics",
+          "subtitle": "Beginner friendly",
+          "image": "https://images.unsplash.com/photo-1498079022511-d15614cb1c02"
+        },
+        {
+          "id": 2,
+          "title": "English Pronunciation",
+          "subtitle": "Improve clarity",
+          "image": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca"
+        },
+        {
+          "id": 3,
+          "title": "Hindi Alphabets",
+          "subtitle": "Step-by-step learning",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+        },
+        {
+          "id": 4,
+          "title": "Daily Phrases",
+          "subtitle": "Everyday usage",
+          "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+        },
+        {
+          "id": 5,
+          "title": "Grammar Explained",
+          "subtitle": "Simple and clear",
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+        },
+        {
+          "id": 6,
+          "title": "Listening Practice",
+          "subtitle": "Train your ears",
+          "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+        }
+      ]
+    },
+    {
+      "type": "settings",
+      "title": "Settings",
+      "items": [
+        {
+          "id": 1,
+          "title": "Account Settings",
+          "subtitle": "Manage your account preferences",
+          "image": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d"
+        },
+        {
+          "id": 2,
+          "title": "Privacy & Security",
+          "subtitle": "Control your privacy options",
+          "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4"
+        },
+        {
+          "id": 3,
+          "title": "Notifications",
+          "subtitle": "Customize alerts and emails",
+          "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f"
+        },
+        {
+          "id": 4,
+          "title": "Appearance",
+          "subtitle": "Theme and display options",
+          "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980"
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "title": "About",
+      "items": [
+        {
+          "id": 1,
+          "title": "About Learnin!",
+          "subtitle": "A modern platform to learn languages easily",
+          "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        },
+        {
+          "id": 2,
+          "title": "Our Mission",
+          "subtitle": "Make language learning accessible to everyone",
+          "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        },
+        {
+          "id": 3,
+          "title": "Our Vision",
+          "subtitle": "Build a global community of learners",
+          "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+        }
+      ]
+    }
+  ]
+}
